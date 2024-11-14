@@ -17,7 +17,7 @@ import tensorflow.keras.models  as KM
 mnist = tf.keras.datasets.mnist
 (x_train, y_train), (x_test, y_test) = mnist.load_data()
 x_train, x_test = x_train/255.0, x_test/255.0
-x_train, x_test = np.expand_dims(x_train, axis=-1), np.expand_dims(x_test, axis=-1)
+
 
 ## Model
 inputs = KL.Input(shape=(28, 28, 1))
